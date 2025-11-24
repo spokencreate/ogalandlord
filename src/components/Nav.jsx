@@ -11,7 +11,7 @@ const Nav = () => {
         <nav>
             <Link href="#">Home</Link>
             <Link href="#">Properties</Link>
-            <Link href="#">How It Works</Link>
+            <Link href="#">How it Works</Link>
             <Link href="#">Pricing</Link>
             <Link href="#">Help Center</Link>
         </nav>
