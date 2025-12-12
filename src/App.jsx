@@ -1,21 +1,23 @@
-
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from "./pages/Home"
+import Rent from './pages/Rent'
+import Sell from './pages/Sell'
+import Nav from "./components/Nav"
 import HomePage from './pages/Home'
 
 
 const App = () => {
-  return (
-    <Router>
-      <Nav/>
-        <Routes>
-          <Route path='home' element={<HomePage/>}/> {/* <-- CHANGED to '/' */}
-          <Route path='rent' element={<Rent/>}/>
-          <Route path='sell' element={<Sell/>}/>
-        </Routes>
-    </Router>
-  )
+  return (
+    <Router>
+      <Nav/>
+        <Routes>
+          <Route path='/ogalandlord' element={<HomePage/>}/>
+          <Route path='rent' element={<Rent/>}/>
+          <Route path='sell' element={<Sell/>}/>
+        </Routes>
+    </Router>
+  )
 }
 
 export default App
